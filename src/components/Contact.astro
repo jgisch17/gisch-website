@@ -1,0 +1,99 @@
+---
+---
+<section id="contact" class="bg-cream py-16 md:py-28 px-6">
+  <div class="max-w-2xl mx-auto">
+
+    <!-- Header -->
+    <div class="text-center mb-14">
+      <p class="text-gold text-xs font-semibold tracking-[0.3em] uppercase mb-5">Get In Touch</p>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-navy mb-6 leading-tight">
+        Ready to Win<br />on Amazon?
+      </h2>
+      <p class="text-gray-500 text-lg leading-relaxed">
+        We're selective about who we partner with — and that's exactly why every brand we take on gets results. Tell us about your business.
+      </p>
+    </div>
+
+    <!-- Form -->
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="space-y-5"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hidden"><label>Skip this: <input name="bot-field" /></label></p>
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-xs font-semibold text-navy tracking-widest uppercase mb-2">Name</label>
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="Your name"
+            class="w-full bg-white border border-gray-200 focus:border-gold rounded-sm px-4 py-3.5 text-navy placeholder-gray-300 outline-none transition-colors duration-200 text-sm"
+          />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-navy tracking-widest uppercase mb-2">Email</label>
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="you@company.com"
+            class="w-full bg-white border border-gray-200 focus:border-gold rounded-sm px-4 py-3.5 text-navy placeholder-gray-300 outline-none transition-colors duration-200 text-sm"
+          />
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-xs font-semibold text-navy tracking-widest uppercase mb-2">Brand / Company</label>
+          <input
+            type="text"
+            name="company"
+            placeholder="Your brand name"
+            class="w-full bg-white border border-gray-200 focus:border-gold rounded-sm px-4 py-3.5 text-navy placeholder-gray-300 outline-none transition-colors duration-200 text-sm"
+          />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-navy tracking-widest uppercase mb-2">Monthly Ad Spend</label>
+          <select
+            name="spend"
+            class="w-full bg-white border border-gray-200 focus:border-gold rounded-sm px-4 py-3.5 text-navy outline-none transition-colors duration-200 text-sm appearance-none cursor-pointer"
+          >
+            <option value="">Select a range</option>
+            <option value="under-10k">Under $10K / mo</option>
+            <option value="10k-50k">$10K – $50K / mo</option>
+            <option value="50k-150k">$50K – $150K / mo</option>
+            <option value="150k-plus">$150K+ / mo</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-xs font-semibold text-navy tracking-widest uppercase mb-2">What are you trying to solve?</label>
+        <textarea
+          name="message"
+          rows="5"
+          required
+          placeholder="Tell us about your brand, where things stand today, and what you're looking to accomplish..."
+          class="w-full bg-white border border-gray-200 focus:border-gold rounded-sm px-4 py-3.5 text-navy placeholder-gray-300 outline-none transition-colors duration-200 text-sm resize-none"
+        ></textarea>
+      </div>
+
+      <div class="pt-4 text-center">
+        <button
+          type="submit"
+          class="bg-navy hover:bg-navy-mid text-white font-semibold w-full sm:w-auto px-10 md:px-14 py-4 rounded-sm text-xs tracking-[0.2em] uppercase transition-all duration-200 hover:shadow-lg"
+        >
+          Send Message
+        </button>
+        <p class="text-gray-400 text-xs mt-4 tracking-wide">We'll respond within 1–2 business days.</p>
+      </div>
+    </form>
+
+  </div>
+</section>
