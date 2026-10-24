@@ -2,92 +2,91 @@
 const services = [
   {
     number: '01',
-    title: 'Amazon Advertising Strategy',
+    title: 'Amazon Ads Strategy & Management',
     description:
-      'Full-funnel campaign architecture across Sponsored Products, Brands, Display, and DSP. Built to grow share profitably — not just spend.',
+      'Search and DSP, full funnel, across Sponsored Products, Brands and Display. I run the account, then show you which dollars are actually adding sales.',
   },
   {
     number: '02',
-    title: 'Commerce AI Innovation & Integration',
+    title: 'Retail Media Expansion',
     description:
-      'Partner with brands and agencies to map existing workflows, identify automation opportunities, and build or integrate AI agents that optimize campaign performance, surface actionable insights, and eliminate the manual work slowing your team down.',
+      'Walmart, Target, Instacart, DoorDash, Uber Eats, Kroger and more. Built on what is already working for you on Amazon.',
   },
   {
     number: '03',
-    title: 'Amazon Marketing Cloud (AMC)',
+    title: 'AMC, Data & Analytics',
     description:
-      'Advanced audience analytics and multi-touch attribution using AMC data to uncover insights that drive incremental ROAS and smarter budget allocation.',
+      'Incrementality testing, AMC analysis, reporting and live dashboards that show what is really driving your sales.',
   },
   {
     number: '04',
-    title: 'Digital Shelf Optimization',
+    title: 'Digital Shelf & Retail Readiness',
     description:
-      'Content audits, search visibility analysis, and conversion rate optimization to ensure your brand wins at every touchpoint on the Amazon platform.',
+      'Titles, images, video, reviews and category entry. The work that helps your ads convert and your organic rank climb.',
   },
   {
     number: '05',
-    title: 'Retail Media Expansion',
+    title: 'Commerce AI',
     description:
-      'Strategic guidance on scaling beyond Amazon to Walmart Connect, Target Roundel, Instacart, CitrusAd, and emerging retail media networks.',
-  },
-  {
-    number: '06',
-    title: 'Team Training & Capability Building',
-    description:
-      'Hands-on workshops for in-house teams and agencies ready to build real retail media depth — not surface-level certification knowledge.',
+      'Dashboards and tools built on retailer APIs, plus help bringing AI into your own reporting and decisions.',
   },
 ];
 ---
 
-<section id="services" class="relative bg-navy pt-20 md:pt-32 pb-24 md:pb-36 px-6">
+<section id="services" class="relative bg-ink pt-20 md:pt-32 pb-24 md:pb-36 px-6">
 
   <div class="max-w-6xl mx-auto">
 
     <!-- Header -->
     <div class="text-center mb-12 md:mb-20">
-      <p class="text-gold text-xs font-semibold tracking-[0.3em] uppercase mb-5">What We Do</p>
-      <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+      <p class="text-paper/50 text-xs font-semibold tracking-[0.3em] uppercase mb-5">What I Do</p>
+      <h2 class="font-display text-4xl md:text-5xl text-paper mb-6 leading-tight">
         Senior-Level Expertise.<br />Every Engagement.
       </h2>
-      <p class="text-white/40 text-lg max-w-xl mx-auto leading-relaxed">
-        We work with a select group of brands — so every client gets the full weight of our expertise, every time.
+      <p class="text-paper/60 text-lg max-w-xl mx-auto leading-relaxed">
+        I work with a handful of handpicked brands, so every client gets my full attention.
       </p>
     </div>
 
     <!-- Service Grid -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 rounded-sm overflow-hidden">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-paper/10 rounded-lg overflow-hidden">
       {services.map((service) => (
-        <div class="bg-navy p-6 md:p-10 group hover:bg-navy-mid transition-colors duration-300 cursor-default">
-          <div class="font-display text-5xl font-bold mb-6" style="color: rgba(184,154,62,0.15);">
+        <div class="bg-ink p-6 md:p-10 group hover:bg-ink-mid transition-colors duration-300 cursor-default">
+          <div class="font-display text-5xl font-extrabold tracking-tight mb-6 text-paper/15">
             {service.number}
           </div>
-          <h3 class="font-display text-xl font-semibold text-white mb-4 group-hover:text-gold transition-colors duration-200">
+          <h3 class="font-display text-xl text-paper mb-4">
             {service.title}
           </h3>
-          <p class="text-white/40 text-sm leading-relaxed group-hover:text-white/60 transition-colors duration-200">
+          <p class="text-paper/60 text-sm leading-relaxed group-hover:text-paper/80 transition-colors duration-200">
             {service.description}
           </p>
         </div>
       ))}
-    </div>
 
-    <!-- Bottom CTA -->
-    <div class="text-center mt-16">
-      <p class="text-white/30 text-sm mb-6 tracking-wide">Not every brand is the right fit — and that's intentional.</p>
-      <a
-        href="#contact"
-        class="inline-block border border-gold/40 hover:border-gold text-gold hover:text-gold-light text-xs font-semibold px-10 py-4 rounded-sm tracking-[0.2em] uppercase transition-all duration-200"
-      >
-        See If We're a Match
-      </a>
+      <!-- Fit card -->
+      <div class="bg-ink-mid p-6 md:p-10 flex flex-col justify-between gap-8">
+        <div>
+          <h3 class="font-display text-xl text-paper mb-4">Not every brand is the right fit.</h3>
+          <p class="text-paper/60 text-sm leading-relaxed">
+            That's on purpose. Tell me where you're selling today and what you want to fix.
+          </p>
+        </div>
+        <a
+          href="#contact"
+          class="self-start border border-paper/30 hover:border-paper text-paper text-xs font-semibold px-8 py-4 rounded-md tracking-[0.2em] uppercase transition-colors duration-200"
+        >
+          See If We're a Fit
+        </a>
+      </div>
     </div>
 
   </div>
 
-  <!-- Diagonal transition to cream Contact section -->
+  <!-- Diagonal transition to Paper Contact section -->
   <div class="absolute bottom-0 left-0 right-0 leading-none">
     <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;height:80px;">
-      <path d="M0,80 L1440,0 L1440,80 Z" fill="#FAF7F2" />
+      <path d="M0,80 L1440,0 L1440,80 Z" fill="#F6F5F1" />
     </svg>
   </div>
 </section>

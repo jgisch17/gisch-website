@@ -2,13 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-ink: #0D1B2A;
+  --color-ink-mid: #1B2B3D;
+  --color-orange: #FF6B2C;
+  --color-orange-dark: #C2410C;
+  --color-paper: #F6F5F1;
+  --color-slate: #4A5563;
+  --color-border: #E4E2DC;
+  --color-success: #2F7D4F;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 @layer base {
   body {
-    @apply antialiased;
+    @apply antialiased font-medium;
+  }
+  h1, h2, h3 {
+    @apply font-extrabold tracking-tight;
+  }
+  ::selection {
+    background: var(--color-orange);
+    color: var(--color-ink);
   }
 }
 

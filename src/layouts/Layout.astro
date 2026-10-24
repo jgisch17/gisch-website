@@ -8,8 +8,10 @@ interface Props {
 
 const {
   title = 'GISCH | A Commerce Consultancy',
-  description = 'Expert Amazon advertising strategy and commerce media management. GISCH is a boutique consultancy built around deep retail expertise and genuine partnership.',
+  description = 'Amazon and commerce media consulting from Jordan Gisch. 12+ years in Amazon ads, working with a handful of handpicked brands.',
 } = Astro.props;
+
+const ogImage = 'https://gischcommerce.com/gisch-og-share-image_1200x630.png';
 ---
 
 <!doctype html>
@@ -18,20 +20,28 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <meta name="theme-color" content="#0D1B2A" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gischcommerce.com" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={ogImage} />
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   </head>
-  <body class="font-sans bg-white text-navy">
+  <body class="font-sans bg-paper text-ink">
     <slot />
   </body>
 </html>

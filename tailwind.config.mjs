@@ -4,21 +4,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        navy: {
+        ink: {
           DEFAULT: '#0D1B2A',
-          mid: '#1B2B4B',
-          light: '#2D4068',
+          mid: '#1B2B3D',
         },
-        gold: {
-          DEFAULT: '#B89A3E',
-          light: '#D4B56A',
-          dark: '#8A7030',
+        orange: {
+          DEFAULT: '#FF6B2C', // Signal Orange
+          dark: '#C2410C', // small text and links on Paper
         },
-        cream: '#FAF7F2',
+        paper: '#F6F5F1',
+        slate: '#4A5563',
+        border: '#E4E2DC',
+        success: '#2F7D4F',
       },
       fontFamily: {
-        display: ['"Playfair Display"', 'Georgia', 'serif'],
-        sans: ['Outfit', 'system-ui', 'sans-serif'],
+        sans: ['"Inter Tight"', 'system-ui', 'sans-serif'],
+        display: ['"Inter Tight"', 'system-ui', 'sans-serif'],
       },
     },
   },
